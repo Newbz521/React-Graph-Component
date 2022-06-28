@@ -1,0 +1,215 @@
+.landingPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 5px;
+  background: #292929;
+}
+.landingLeft {
+  display: flex;
+  height: 100vh;
+  width: 70%;
+  /* border: 1px solid blue; */
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10%;
+}
+button {
+  z-index: 5;
+}
+.listContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  /* overflow: scroll; */
+}
+.state {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  height: 80%;
+  width: 85%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  overflow: scroll;
+  gap: 7px;
+  padding: 15px;
+}
+.graphBox {
+  display: flex;
+  width: 80%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #383838;
+  box-shadow: 20px 20px 60px #1c1c1c, -20px -20px 60px #262626;
+  flex-direction: column;
+  gap: 10px;
+}
+.graphMid {
+  display: flex;
+  width: 95%;
+  height: 85%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.graphContainer {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  overflow: scroll;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  border-left: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  gap: 10px;
+}
+.graphY {
+  font-size: 12px;
+  height: 100%;
+  width: 4%;
+  text-align: start;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  /* margin-bottom: 5px; */
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  text-align: center;
+  /* justify-content: center; */
+  color: rgb(255, 255, 255);
+  /* margin-bottom: -100px; */
+}
+.graphX {
+  color: white;
+  height: 5%;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.bars {
+  display: flex;
+  width: 10px;
+  /* border: 1px solid red; */
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 0px;
+  /* display: inline; */
+  /* margin-left: 2px; */
+  background-color: #ffa31a;
+  border-radius: 5px 5px 0 0;
+  animation: 2s slideDown;
+  transition: 0.5s;
+}
+.bars:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.barName {
+  font-size: 10px;
+  height: 100px;
+  width: 1000px;
+  text-align: start;
+  /* border: 1px solid blue; */
+  display: inline-block;
+  /* margin-bottom: 5px; */
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  text-align: center;
+  /* justify-content: center; */
+  color: rgb(255, 255, 255);
+  /* margin-bottom: -100px; */
+}
+.barName:hover {
+  cursor: pointer;
+}
+
+@keyframes slideDown {
+  from {
+    margin-bottom: -100%;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+}
+
+.landingRight {
+  color: white;
+  display: flex;
+  width: 30%;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10%;
+}
+.infoBox {
+  display: flex;
+  width: 80%;
+  height: 85%;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  background: #383838;
+  box-shadow: 20px 20px 60px #1c1c1c, -20px -20px 60px #262626;
+  flex-direction: column;
+  gap: 10px;
+}
+.rightData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+
+  height: 90%;
+  width: 90%;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+.pieChart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  /* border-bottom: 1px solid #44daff; */
+  padding: 20px;
+  width: 90%;
+  height: 150px;
+  /* box-shadow: 20px 20px 60px #34343c, -20px -20px 60px #464651; */
+  /* border-radius: 100px; */
+}
+.smallInfo {
+  display: flex;
+  width: 90%;
+  border-top: 1px solid #808080;
+  padding-top: 25px;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 5px;
+}
+span {
+  color: #a8a8a8;
+}
+._id,
+.Probability,
+.__v {
+  display: none;
+}
